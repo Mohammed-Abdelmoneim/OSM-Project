@@ -74,3 +74,45 @@
 .img-box img {
   max-width: 100%;
 }
+
+/************************/
+/* ABOUT SECTION */
+/************************/
+.section-about {
+  /* padding: 9.6rem 0 9.6rem 0; */
+  position: relative;
+}
+.about-absolute-img {
+  position: absolute;
+  right: -2.5rem;
+  top: -3rem;
+  z-index: 10;
+  transform: rotate(-25deg);
+  width: 16rem;
+}
+.about-img {
+  width: 40rem;
+}
+.about-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.heading-img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350rem;
+}
+.heading-text-box {
+  position: relative;
+}
+.heading-text-box::after {
+  content: "All in one place";
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5rem;
+  font-weight: 500;
+}
