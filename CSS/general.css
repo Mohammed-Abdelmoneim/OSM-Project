@@ -136,7 +136,7 @@ body {
   width: fit-content;
   font-size: 1.8rem !important;
   padding: 1.2rem 3.2rem !important;
-  color: #047be1;
+  color: rgb(4, 123, 225);
   background-color: #fff;
   font-weight: 800;
 }
@@ -156,16 +156,17 @@ body {
 
 .sub-heading {
   display: block;
-  color: #b3daf8;
+  color: rgb(179, 218, 248);
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
 }
-.secondary-heading {
+.secondary-heading,
+.secondary-heading-2 {
   color: #fff;
   font-size: 4.4rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6.4rem;
   position: relative;
 }
 .secondary-heading::after {
@@ -174,7 +175,7 @@ body {
   background-color: #fff;
   height: 4px;
   border-radius: 3rem;
-  width: 35rem;
+  width: 45rem;
   top: 50%;
   /* transform: translateY(-50%); */
   margin-left: 4.5rem;
@@ -183,9 +184,10 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+  gap: 0;
 }
 .grid-2-cols {
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* 

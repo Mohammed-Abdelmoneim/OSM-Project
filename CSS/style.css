@@ -84,11 +84,17 @@
 }
 .about-absolute-img {
   position: absolute;
-  right: -2.5rem;
-  top: -3rem;
   z-index: 10;
   transform: rotate(-25deg);
   width: 16rem;
+}
+.absolute-img-right {
+  right: -2.5rem;
+  top: -3rem;
+}
+.absolute-img-left {
+  left: -2.5rem;
+  top: -3rem;
 }
 .about-img {
   width: 40rem;
@@ -98,21 +104,226 @@
   line-height: 1.8;
   margin-bottom: 2rem;
 }
-.heading-img {
+.special-heading-img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 350rem;
 }
-.heading-text-box {
+.special-heading-box {
   position: relative;
 }
-.heading-text-box::after {
+.pri-special-heading::after {
   content: "All in one place";
+}
+.sec-special-heading::after {
+  content: "Here's some tips to be the boss";
+}
+.sec-special-heading img {
+  width: 400rem;
+}
+.special-heading-box::after {
   position: absolute;
-  top: 47.5%;
+  width: 100%;
+  text-align: center;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5rem;
   font-weight: 500;
 }
+
+/************************/
+/* lineup SECTION */
+/************************/
+.section-lineup {
+  margin: 9.6rem 0;
+}
+.special-cup {
+  transform: rotate(30deg);
+  width: 20rem;
+  left: -5rem;
+}
+.special-ball {
+  width: 29rem;
+  right: -4.5rem;
+  top: 1rem;
+}
+
+/************************/
+/* tips SECTION */
+/************************/
+.section-tips {
+  margin-top: -4rem;
+  background-image: linear-gradient(
+      rgba(4, 122, 225, 0.688),
+      rgba(4, 122, 225, 0.688)
+    ),
+    url("../imgs/tips-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 60rem;
+}
+.section-tips img {
+  height: 60rem;
+}
+.tips-img-right {
+  position: absolute;
+  right: 0;
+}
+.tips-text-box {
+  width: 70rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inline-btn {
+  display: inline-block !important;
+}
+
+/************************/
+/* tips SECTION */
+/************************/
+.community-section {
+  background-image: linear-gradient(
+    rgba(254, 186, 41, 25) 5%,
+    rgba(255, 141, 19, 255) 95%
+  );
+  position: relative !important;
+  text-align: center;
+  padding: 6.4rem 0;
+}
+.community-section .sub-heading {
+  color: #047be1;
+}
+.community-section .secondary-heading-2 {
+  color: #047be1;
+}
+.community-img {
+  width: 80rem;
+  margin-top: -3rem;
+}
+.community-section a {
+  margin-top: 2rem;
+}
+.community-section .sub-heading {
+  position: relative !important;
+}
+.community-section .sub-heading::before,
+.community-section .sub-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 25rem;
+  border-radius: 30px;
+  background-color: #047be1;
+}
+.community-section .sub-heading::after {
+  margin-left: 5rem;
+}
+.community-section .sub-heading::before {
+  margin-left: -30rem;
+}
+/************************/
+/* GET IN TOUCH SECTION */
+/************************/
+.section-get {
+  background-image: linear-gradient(
+      rgba(4, 122, 225, 0.888),
+      rgba(4, 122, 225, 0.888)
+    ),
+    url("../imgs/get-in-touch.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 12.8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-heading {
+  text-align: center;
+}
+.get-heading::after,
+.get-heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 16.5rem;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.get-heading::after {
+  margin-left: 5rem;
+}
+.get-heading::before {
+  margin-left: -21.5rem;
+}
+.get-form {
+  width: 70rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+input,
+textarea {
+  background-color: rgb(5, 164, 243);
+  border: none;
+  padding: 1.6rem 2.2rem;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: inherit;
+  transition: 0.3s;
+}
+input:focus,
+textarea:focus {
+  outline: 5px solid rgba(5, 164, 243, 0.5);
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.468);
+  font-weight: 600;
+}
+input[type="submit"] {
+  margin-top: auto;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: #047be1;
+  font-weight: 700;
+}
+input[type="submit"]:hover {
+  background-color: rgb(5, 164, 243);
+  color: #fff;
+}
+textarea {
+  flex: 1;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.world {
+  width: 26rem;
+  top: 35rem;
+  transform: none;
+  right: -8rem;
+}
+.microphone {
+  width: 18rem;
+  transform: rotate(-7deg);
+  top: 1rem;
+}
+/* .bill {
+  width: 20rem;
+} */
