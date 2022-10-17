@@ -229,6 +229,19 @@
 .community-section .sub-heading::before {
   margin-left: -30rem;
 }
+
+.bill {
+  width: 30rem;
+  top: 15rem;
+  left: -10rem;
+  transform: rotate(-20deg);
+}
+.cup {
+  width: 15rem;
+  top: 42rem;
+  right: -3.5rem;
+  transform: rotate(-23deg);
+}
 /************************/
 /* GET IN TOUCH SECTION */
 /************************/
@@ -324,6 +337,3 @@ textarea {
   transform: rotate(-7deg);
   top: 1rem;
 }
-/* .bill {
-  width: 20rem;
-} */
