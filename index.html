@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -79,7 +80,7 @@
               <div class="about-img-box">
                 <img src="imgs/about.png" class="about-img" alt="about img" />
               </div>
-              <div class="about-text-box">
+              <div class="container about-text-box">
                 <p class="about-text">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -114,7 +115,7 @@
             <h2 class="secondary-heading">Choose lineup for your team</h2>
             <div class="about-box grid grid-2-cols">
               <div class="about-text-box">
-                <p class="about-text">
+                <p class="container about-text">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy ext ever since the 1500s, when an unknown
@@ -139,7 +140,7 @@
                 <img src="imgs/tactic2.png" class="about-img" alt="about img" />
               </div>
               <div class="about-text-box">
-                <p class="about-text">
+                <p class="container about-text">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy ext ever since the 1500s, when an unknown
@@ -166,7 +167,7 @@
             class="tips-img-right"
             alt="photo of an OSM manager"
           />
-          <div class="tips-text-box">
+          <div class="container tips-text-box">
             <p class="about-text tips-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy ext
@@ -243,22 +244,24 @@
 
       <footer class="footer">
         <div class="container grid grid-4-cols">
-          <a href="index.html">
-            <img src="imgs/logo.png" class="logo" alt="osm logo" />
-          </a>
-          <div class="social-links">
-            <a class="footer-social-link" href="#">
-              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+          <div class="footer-flex">
+            <a href="index.html">
+              <img src="imgs/logo.png" class="logo" alt="osm logo" />
             </a>
-            <a class="footer-social-link" href="#">
-              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
-            </a>
-            <a class="footer-social-link" href="#">
-              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-            </a>
-            <a class="footer-social-link" href="#">
-              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-            </a>
+            <div class="social-links">
+              <a class="footer-social-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+              <a class="footer-social-link" href="#">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+              <a class="footer-social-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+              <a class="footer-social-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </div>
           </div>
           <div class="download">
             <a
@@ -291,9 +294,9 @@
               <li><a class="footer-link" href="#">Tactic</a></li>
               <li><a class="footer-link" href="#">Tips</a></li>
             </ul>
-            <a class="go-up-link" href="#">
+            <!-- <a class="go-up-link" href="#">
               <img class="go-up" src="imgs/go-up.png" alt="go up icon" />
-            </a>
+            </a> -->
           </div>
         </div>
       </footer>

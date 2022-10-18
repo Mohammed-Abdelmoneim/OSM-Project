@@ -72,7 +72,6 @@ body {
   color: #fff;
 }
 img {
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -103,7 +102,7 @@ img {
   padding: 1.6rem 3.2rem;
   font-weight: 600;
   border: none;
-  border-radius: 12px;
+  border-radius: 9px;
 
   cursor: pointer;
   transition: all 0.3s;
@@ -175,7 +174,7 @@ img {
   background-color: #fff;
   height: 4px;
   border-radius: 3rem;
-  width: 45rem;
+  width: calc(30%);
   top: 50%;
   /* transform: translateY(-50%); */
   margin-left: 4.5rem;
@@ -190,14 +189,15 @@ img {
   display: grid;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   gap: 0;
-  row-gap: 9.6rem;
+  row-gap: 3.2rem;
 }
 .grid-2-cols {
   grid-template-columns: 1fr 1fr;
 }
 .grid-4-cols {
-  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /* 
 .heading-primary,

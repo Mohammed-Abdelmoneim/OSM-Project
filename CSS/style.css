@@ -169,6 +169,7 @@
 }
 .section-tips img {
   height: 60rem;
+  opacity: 0.5;
 }
 .tips-img-right {
   position: absolute;
@@ -403,4 +404,11 @@ textarea {
 .download {
   display: flex;
   gap: 0.5rem;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
 }
