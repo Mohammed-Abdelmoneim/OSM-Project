@@ -71,7 +71,14 @@ body {
   overflow-x: hidden;
   color: #fff;
 }
-
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 /************************/
 /* GENERAL REUSABLE COMPONENT */
 /************************/
@@ -80,13 +87,6 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  margin-bottom: 9.6rem;
 }
 
 .btns {
@@ -180,16 +180,25 @@ body {
   /* transform: translateY(-50%); */
   margin-left: 4.5rem;
 }
+/* .grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+} */
 .grid {
   display: grid;
   align-items: center;
   justify-items: center;
   gap: 0;
+  row-gap: 9.6rem;
 }
 .grid-2-cols {
   grid-template-columns: 1fr 1fr;
 }
-
+.grid-4-cols {
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+}
 /* 
 .heading-primary,
 .heading-secondary {

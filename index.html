@@ -13,11 +13,19 @@
     />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="background">
       <header class="header">
-        <a href="#">
+        <a href="index.html">
           <img src="imgs/logo.png" class="logo" alt="osm logo" />
         </a>
 
@@ -62,7 +70,7 @@
           <div class="container">
             <img
               src="imgs/about-cup.png"
-              class="about-absolute-img absolute-img-right"
+              class="about-absolute-img absolute-img-right about-cup"
               alt=""
             />
             <p class="sub-heading">about us</p>
@@ -117,7 +125,7 @@
                 <a href="#" class="btn btn-section">Pick up one</a>
               </div>
               <div class="about-img-box">
-                <img src="imgs/lineup.png" class="about-img" alt="about img" />
+                <img src="imgs/lineup2.png" class="about-img" alt="about img" />
               </div>
             </div>
           </div>
@@ -128,7 +136,7 @@
             <h2 class="secondary-heading">Guide your team with tactics</h2>
             <div class="about-box grid grid-2-cols">
               <div class="about-img-box">
-                <img src="imgs/tactic.png" class="about-img" alt="about img" />
+                <img src="imgs/tactic2.png" class="about-img" alt="about img" />
               </div>
               <div class="about-text-box">
                 <p class="about-text">
@@ -232,6 +240,63 @@
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <div class="container grid grid-4-cols">
+          <a href="index.html">
+            <img src="imgs/logo.png" class="logo" alt="osm logo" />
+          </a>
+          <div class="social-links">
+            <a class="footer-social-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
+            <a class="footer-social-link" href="#">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="footer-social-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a class="footer-social-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+          <div class="download">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.gamebasics.osm&hl=en&gl=US"
+              target="_blank
+            "
+            >
+              <img
+                class="download-img"
+                src="imgs/google-play.png"
+                alt="google play"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/online-soccer-manager-osm/id400201466"
+              target="_blank
+              "
+            >
+              <img
+                class="download-img"
+                src="imgs/app-store.png"
+                alt="app store "
+              />
+            </a>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-list">
+              <li><a class="footer-link" href="#">Home</a></li>
+              <li><a class="footer-link" href="#">Lineup</a></li>
+              <li><a class="footer-link" href="#">Tactic</a></li>
+              <li><a class="footer-link" href="#">Tips</a></li>
+            </ul>
+            <a class="go-up-link" href="#">
+              <img class="go-up" src="imgs/go-up.png" alt="go up icon" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
