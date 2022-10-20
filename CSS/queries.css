@@ -92,7 +92,7 @@ instead, 1rem = 1em = 16px  */
   }
   .world {
     width: 22rem;
-    top: 40rem;
+    top: 55rem;
   }
   .secondary-heading::after,
   .sub-heading::after,
@@ -101,91 +101,93 @@ instead, 1rem = 1em = 16px  */
   .get-heading::before {
     display: none;
   }
-  .get-form {
-    width: 100%;
+}
+/************************/
+/* BELOW 544px (Phones) */
+/************************/
+@media (max-width: 34em) {
+  html {
+    font-size: 45% !important ;
+  }
+  .hero .text-box {
+    padding: 0 0rem;
+  }
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+  .about-text-box {
+    text-align: center;
+    padding-bottom: 6.4rem;
+  }
+  .about-cup {
+    width: 11rem;
+    top: 8rem;
+  }
+  .special-cup {
+    width: 13.5rem;
+  }
+  .special-ball {
+    width: 12rem;
+    top: 4rem;
+  }
+  .btn-section {
+    display: inline-block !important;
+  }
+  .img-box img {
+    max-width: 100%;
+  }
+  .grid-2-cols {
     grid-template-columns: 1fr;
-    row-gap: 1.5rem;
+  }
+  .special-heading-box::after {
+    font-size: 2.8rem;
+  }
+  .tips-text {
+    width: 36rem;
+    margin: 2.5rem auto;
+  }
+  .secondary-heading-2 {
+    font-size: 3.1rem;
+  }
+  .btns {
+    justify-content: center;
+  }
+  .btns {
+    display: flex;
+    gap: 1.8rem;
+    flex-direction: column;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .bill {
+    width: 16rem;
+    top: 10rem;
+  }
+  .cup {
+    width: 8rem;
+  }
+  .microphone {
+    width: 10rem;
+  }
+  .world {
+    width: 15rem;
+    top: 63rem;
+    right: -5.2rem;
+  }
+  .section-get {
+    display: block;
   }
   textarea {
     flex: none;
     height: 12rem;
   }
-
-  /************************/
-  /* BELOW 544px (Phones) */
-  /************************/
-  @media (max-width: 34em) {
-    html {
-      font-size: 45% !important ;
-    }
-    .hero .text-box {
-      padding: 0 0rem;
-    }
-    .secondary-heading {
-      font-size: 3.2rem;
-    }
-    .sub-heading {
-      font-size: 1.2rem;
-    }
-    .about-text-box {
-      text-align: center;
-      padding-bottom: 6.4rem;
-    }
-    .about-cup {
-      width: 11rem;
-      top: 8rem;
-    }
-    .special-cup {
-      width: 13.5rem;
-    }
-    .special-ball {
-      width: 12rem;
-      top: 4rem;
-    }
-    .btn-section {
-      display: inline-block !important;
-    }
-    .img-box img {
-      max-width: 100%;
-    }
-    .grid-2-cols {
-      grid-template-columns: 1fr;
-    }
-    .special-heading-box::after {
-      font-size: 2.8rem;
-    }
-    .tips-text {
-      width: 36rem;
-      margin: 2.5rem auto;
-    }
-    .secondary-heading-2 {
-      font-size: 3.1rem;
-    }
-    .btns {
-      justify-content: center;
-    }
-    .btns {
-      display: flex;
-      gap: 1.8rem;
-      flex-direction: column;
-    }
-    .about-img {
-      width: 100%;
-    }
-    .bill {
-      width: 16rem;
-      top: 10rem;
-    }
-    .cup {
-      width: 8rem;
-    }
-    .microphone {
-      width: 10rem;
-    }
-    .world {
-      width: 15rem;
-      top: 63rem;
-      right: -5.2rem;
-    }
+  .get-form {
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
   }
 }
