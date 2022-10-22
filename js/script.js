@@ -3,9 +3,9 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-// btnNavEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-// });
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
 
 ///////////////////////////////////////////////////////////
 /* smooth scrolling animation */
@@ -20,7 +20,7 @@ allLinks.forEach(function (link) {
     // scroll back to the top
     if (href === "#")
       window.scrollTo({
-        top: "500px",
+        top: 0,
         behavior: "smooth",
       });
 
@@ -46,14 +46,17 @@ const obs = new IntersectionObserver(
     const ent = entries[0];
     console.log(ent);
 
-    if (!ent.isIntersecting) document.body.classList.add("sticky");
-    else document.body.classList.remove("sticky");
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
   },
   {
     // in the viewport
     root: null,
     threshold: 0,
-    rootMargin: "-80px",
+    rootMargin: "-100px",
   }
 );
 obs.observe(sectionHeroEl);

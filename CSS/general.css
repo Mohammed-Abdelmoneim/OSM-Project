@@ -67,9 +67,19 @@ body {
   font-weight: 400;
 
   /* only works if nothing is absolutly positioned
-  in relatio to the body */
+  in relation to the body */
   overflow-x: hidden;
   color: #fff;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: #047be1;
+  background: #fff;
+}
+
+::selection {
+  color: #047be1;
+  background: #fff;
 }
 img {
   user-select: none;
